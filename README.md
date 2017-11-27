@@ -14,6 +14,8 @@ The merged version of these four datasets selects for the years extending from 1
 3. *data3.py* merges the two csvs produced in the earlier two sets of codes and writes the output to a csv named *cheibubStart*
 4. *data4.py* imports the gapminder datasets, cleans them, and merges them together. These will be used in a later analysis. The output of this code is converted to the csv file named *gap.csv*
 
+## Generating the Figures
+
 1. Running *figure1.py* will produce *top10countries.pdf* which is a bar plot of total number of attacks that have occurred in the ten countries that have received the highest total number of terror attacks in the years from 1970 to 2008. These are then separated out in accordance with that country's regime type and the total number of attacks that occurred in it as that regime type. Some countries have only had one type of regime during these years, but others have had two or three.
 2. *figure2.py* will produce *regimeattacktype.pdf*, this plot shows the total number of attacks experienced by specific regime types over the years examined.
 3. *figure3.py* generates *Plot of total attacks by Regime type.pdf* which is a similar plot to the one above, but does not separate out by attack type. 
