@@ -28,14 +28,12 @@ gdf = GeoDataFrame(lastyear, crs=data, geometry=geometry)
 
 sns.set(style="white")
 data.plot(ax=gdf.plot(marker='*', column = 'attacktype1_txt', markersize=5, figsize=(30, 30), legend=True),  facecolor="none", edgecolor='grey')
-plt.savefig('2008attacktype.pdf')
+plt.savefig('2008attacktype.pdf', bbox_inches='tight')
 
 
 sns.set(style="white")
 data.plot(ax=gdf.plot(marker='*', column = 'regimetxt', markersize=5, figsize=(30, 30), legend=True),  facecolor="none", edgecolor='grey')
-plt.savefig('2008regimeattack.pdf')
-
-df = pd.read_csv('chebuibStart.csv').dropna()
+plt.savefig('2008regimeattack.pdf', bbox_inches='tight')
 
 geometry = [Point(xy) for xy in zip(df['longitude'], df['latitude'])]
 df.drop(['longitude', 'latitude'], axis=1)
@@ -44,8 +42,8 @@ gdf = GeoDataFrame(df, crs=data, geometry=geometry)
 
 sns.set(style="white")
 data.plot(ax=gdf.plot(marker='*', column = 'attacktype1_txt', markersize=5, figsize=(30, 30), legend=True),  facecolor="none", edgecolor='grey')
-plt.savefig('1970to2008attacktype.pdf')
+plt.savefig('1970to2008attacktype.pdf', bbox_inches='tight')
 
 sns.set(style="white")
 data.plot(ax=gdf.plot(marker='*', column = 'regimetxt', markersize=5, figsize=(30, 30), legend=True),  facecolor="none", edgecolor='grey')
-plt.savefig('1970to2008regimeattack.pdf')
+plt.savefig('1970to2008regimeattack.pdf', bbox_inches='tight')
