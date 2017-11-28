@@ -21,6 +21,7 @@ Cheibub5=Cheibub4.replace("Congo (Brazzaville, Republic of Congo)", "Republic of
 Cheibub5.loc[(Cheibub5['ctryname'] == "Serbia-Montenegro") & (Cheibub5['year'] > 1991), 'ctryname'] = 'Yugoslavia'
 Cheibub5.loc[(Cheibub5['ctryname'] == "Yugoslavia") & (Cheibub5['year'] > 2002), 'ctryname'] = 'Serbia-Montenegro'
 Cheibub5.loc[(Cheibub5['ctryname'] == "Serbia-Montenegro") & (Cheibub5['year'] > 2006), 'ctryname'] = 'Serbia'
+Cheibub5.loc[(Cheibub5['regime'] == 0), 'regime' ] = 6
 Cheibub6=Cheibub5.rename(columns={'ctryname': 'Country'})
 
 #save a dataframe to a csv with only the columns we care about

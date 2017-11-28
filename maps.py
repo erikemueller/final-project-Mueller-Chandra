@@ -1,8 +1,8 @@
-import statsmodels.api as sm 
+import statsmodels.api as sm
 import pandas as pd
 import numpy as np
 from sklearn import preprocessing
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
 plt.rc("font", size=14)
 from sklearn.linear_model import LogisticRegression
 from sklearn.cross_validation import train_test_split
@@ -17,7 +17,7 @@ df = pd.read_csv('chebuibStart.csv').dropna()
 fp = "world/TM_WORLD_BORDERS_SIMPL-0.3.shp"
 data = gpd.read_file(fp)
 
-lastyear = df[df['year'] == 2008]
+lastyear = df[df['year'] == 2008].dropna()
 fp = "world/TM_WORLD_BORDERS_SIMPL-0.3.shp"
 data = gpd.read_file(fp)
 
@@ -29,7 +29,6 @@ gdf = GeoDataFrame(lastyear, crs=data, geometry=geometry)
 sns.set(style="white")
 data.plot(ax=gdf.plot(marker='*', column = 'attacktype1_txt', markersize=5, figsize=(30, 30), legend=True),  facecolor="none", edgecolor='grey')
 plt.savefig('2008attacktype.pdf', bbox_inches='tight')
-
 
 sns.set(style="white")
 data.plot(ax=gdf.plot(marker='*', column = 'regimetxt', markersize=5, figsize=(30, 30), legend=True),  facecolor="none", edgecolor='grey')
