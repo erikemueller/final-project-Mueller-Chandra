@@ -12,7 +12,7 @@ from shapely.geometry import Point
 import geopandas as gpd
 from geopandas import GeoSeries, GeoDataFrame
 
-df = pd.read_csv('chebuibStart.csv').dropna()
+df = pd.read_csv('CheibubStart.csv').dropna()
 
 fp = "world/TM_WORLD_BORDERS_SIMPL-0.3.shp"
 data = gpd.read_file(fp)
