@@ -1,8 +1,8 @@
-import statsmodels.api as sm 
+import statsmodels.api as sm
 import pandas as pd
 import numpy as np
 from sklearn import preprocessing
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
 plt.rc("font", size=14)
 from sklearn.linear_model import LogisticRegression
 from sklearn.cross_validation import train_test_split
@@ -19,4 +19,4 @@ ax.set_xticklabels(ax.get_xticklabels(), rotation=40, ha="right")
 ax.set(xlabel='Regime Type', ylabel='Total number of attacks', title = "Count of attacks by regime type from 1970 to 2008")
 ax.set_position([0.2,0.2,1.5,0.8])
 leg = ax.legend(loc = 'center left', bbox_to_anchor = (1.0, 0.5))
-plt.savefig('Plot of total attacks by Regime type.pdf', bbox_inches='tight')
+plt.savefig('PlotoftotalattacksbyRegimetype.pdf', bbox_inches='tight')
