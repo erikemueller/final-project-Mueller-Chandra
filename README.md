@@ -17,13 +17,13 @@ The merged version of these four datasets selects for the years extending from 1
 ## Generating the Figures
 
 1. Running *figure1.py* will produce *top10countries.pdf* which is a bar plot of total number of attacks that have occurred in the ten countries that have received the highest total number of terror attacks in the years from 1970 to 2008. These are then separated out in accordance with that country's regime type and the total number of attacks that occurred in it as that regime type. Some countries have only had one type of regime during these years, but others have had two or three.
-![Figure 1](top10countries.pdf "Figure 1")
-2. *figure2.py* will produce *regimeattacktype.pdf*, this plot shows the total number of attacks experienced by specific regime types over the years examined.
-3. *figure3.py* generates *Plot of total attacks by Regime type.pdf* which is a similar plot to the one above, but does not separate out by attack type. 
-4. *figure4.py* produces *regimeattacktype2008.pdf*. This plot shows the total number of attacks experienced by specific regime types in 2008.
-5. *figure5.py* produces *country2008attacktype.pdf*. This plot shows the total number of attacks experienced by the ten countries that experienced the most attacks in 2008 and are then broken down by the type of attack.
-6. *figure6.py* produces *toptencountry2008.pdf*. This plot shows the total number of attacks experienced by the ten countries that experienced the most attacks in 2008.
-7. *figure7.py* produces *top10ratepermillion2008.pdf*. This produces the rate of attacks per one million people in all the countries and territories that exist in the original STARTfinal file in relation to the population listed for 2008 in the gapminder dataset.  
+![Figure 1](top10countries.pdf "Figure 1") can be found here.
+2. *figure2.py* will produce *regimeattacktype.pdf*, this plot shows the total number of attacks experienced by specific regime types over the years examined. ![Figure 2](regimeattacktype.pdf "Figure 2") can be found here.
+3. *figure3.py* generates *Plot of total attacks by Regime type.pdf* which is a similar plot to the one above, but does not separate out by attack type. ![Figure 3](Plot of total attacks by Regime type.pdf "Figure 3") can be found here.
+4. *figure4.py* produces *regimeattacktype2008.pdf*. This plot shows the total number of attacks experienced by specific regime types in 2008. ![Figure 4](regimeattacktype2008.pdf "Figure 4") can be found here.
+5. *figure5.py* produces *country2008attacktype.pdf*. This plot shows the total number of attacks experienced by the ten countries that experienced the most attacks in 2008 and are then broken down by the type of attack. ![Figure 5](country2008attacktype.pdf "Figure 5") can be found here.
+6. *figure6.py* produces *toptencountry2008.pdf*. This plot shows the total number of attacks experienced by the ten countries that experienced the most attacks in 2008. ![Figure 6](toptencountry2008.pdf "Figure 6") can be found here.
+7. *figure7.py* produces *top10ratepermillion2008.pdf*. This produces the rate of attacks per one million people in all the countries and territories that exist in the original STARTfinal file in relation to the population listed for 2008 in the gapminder dataset.  ![Figure 7](top10ratepermillion2008.pdf "Figure 7") can be found here.
 
 ## Generating maps
 To generate the maps associated with this project, run the file *maps.py* after all the previous code has been run or the files associated with the previous programs are present. The maps produced are:
