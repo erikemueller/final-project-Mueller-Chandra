@@ -12,12 +12,11 @@ from shapely.geometry import Point
 import collections
 
 df = pd.read_csv('CheibubStart.csv').dropna()
-lastyear = df[df['year'] == 2008]
 
 sns.set(style="white")
-ax = sns.countplot(x="Country", hue="attacktype1_txt", data=lastyear, order=lastyear.Country.value_counts().iloc[:10].index)
+ax = sns.countplot(x="Country", data=df, order=df.Country.value_counts().iloc[:10].index)
 ax.set_xticklabels(ax.get_xticklabels(), rotation=40, ha="right")
-ax.set(xlabel='Country', ylabel='Total number of attacks', title = "Total attacks by regime type for 2008")
+ax.set(xlabel='Country', ylabel='Total number of attacks', title = "Total attacks in top hit countries and territories from 1970 to 2008")
 ax.set_position([0.2,0.2,1.5,0.8])
 leg = ax.legend(loc = 'center left', bbox_to_anchor = (1.0, 0.5))
-plt.savefig('country2008attacktype.pdf', bbox_inches='tight')
+plt.savefig('toptencountry1970to2008.pdf', bbox_inches='tight')

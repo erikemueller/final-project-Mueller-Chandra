@@ -1,8 +1,8 @@
-import statsmodels.api as sm 
+import statsmodels.api as sm
 import pandas as pd
 import numpy as np
 from sklearn import preprocessing
-import matplotlib.pyplot as plt 
+import matplotlib.pyplot as plt
 plt.rc("font", size=14)
 from sklearn.linear_model import LogisticRegression
 from sklearn.cross_validation import train_test_split
@@ -11,7 +11,7 @@ import csv
 from shapely.geometry import Point
 import collections
 
-df = pd.read_csv('chebuibStart.csv')
+df = pd.read_csv('CheibubStart.csv')
 lastyear = df[df['year'] == 2008]
 
 sns.set(style="white")

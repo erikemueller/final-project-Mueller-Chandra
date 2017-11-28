@@ -11,7 +11,7 @@ import csv
 from shapely.geometry import Point
 import collections
 
-df = pd.read_csv('chebuibStart.csv').dropna()
+df = pd.read_csv('CheibubStart.csv').dropna()
 
 sns.set(style="white")
 ax = sns.countplot(x="regimetxt", data=df)
