@@ -19,12 +19,13 @@ world = gpd.read_file(gpd.datasets.get_path('naturalearth_lowres'))
 gdf = GeoDataFrame(df, crs=data, geometry=geometry)
 
 sns.set(style="white")
-data.plot(ax=gdf.plot(marker='*', column = 'attacktype1_txt', markersize=5, figsize=(30, 30), legend=True),  facecolor="none", edgecolor='grey')
+ax=gdf.plot(marker='*', column = 'attacktype1_txt', markersize=5, figsize=(30, 30), legend=True)
+data.plot(ax = ax, facecolor="none", edgecolor='grey')
 leg = ax.legend(loc = 'center left', bbox_to_anchor = (1.0, 0.5))
 plt.savefig('1970to2008attacktype.pdf', bbox_inches='tight')
 
 sns.set(style="white")
-data.plot(ax=gdf.plot(marker='*', column = 'regimetxt', markersize=5, figsize=(30, 30), legend=True),  facecolor="none", edgecolor='grey')
+ax=gdf.plot(marker='*', column = 'regimetxt', markersize=5, figsize=(30, 30), legend=True)
+data.plot(ax = ax,  facecolor="none", edgecolor='grey')
 leg = ax.legend(loc = 'center left', bbox_to_anchor = (1.0, 0.5))
 plt.savefig('1970to2008regimeattack.pdf', bbox_inches='tight')
-
