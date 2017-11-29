@@ -7,8 +7,10 @@ START=pd.read_csv('STARTfinal.csv')
 #merge
 CheibubStart = pd.merge(START, Cheibub, how='outer')
 #fill na values with new numeric values
-#HOW DO I DO THIS
+
+
 CheibubStart["regime"].fillna(CheibubStart["regime"].fillna(0), inplace=True)
+CheibubStart = CheibubStart[CheibubStart['year'] <= 2008].dropna()
 #add text for regime type
 CheibubStart.loc[(CheibubStart['regime'] == 0.0), 'regimetxt'] = 'Unknown/Other type or Occupied Territory'
 CheibubStart.loc[(CheibubStart['regime'] == 1.0), 'regimetxt'] = 'Mixed democracy'
