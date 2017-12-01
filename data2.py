@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import pandas as pd
 import numpy as np
 import csv
@@ -12,7 +14,7 @@ output.close()
 #import downloaded file
 Cheibub=pd.read_excel('Cheibub.xls')
 
-
+#cleaning data for merging
 Cheibub1=Cheibub.replace("United States of America", "United States").replace("Germany, East", "East Germany").replace("Germany, West", "West Germany")
 Cheibub2=Cheibub1.replace("Democratic Republic of the Congo (Zaire, Congo-Kinshasha)", "Democratic Republic of the Congo").replace("Viet Nam", "Vietnam").replace("Vietnam, South", "South Vietnam").replace("Vietnam, North", "North Vietnam")
 Cheibub3=Cheibub2.replace("Yemen PDR (South)", "South Yemen").replace("Yemen Arab Republic", "North Yemen").replace("Serbia and Montenegro", "Serbia-Montenegro").replace("Russian Federation", "Russia")
