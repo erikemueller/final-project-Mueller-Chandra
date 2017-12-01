@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import statsmodels.api as sm
 import pandas as pd
 import numpy as np
@@ -10,10 +12,11 @@ import seaborn as sns
 import csv
 from shapely.geometry import Point
 import collections
-
+#import merged data
 df = pd.read_csv('CheibubStart.csv').dropna()
+#select only those values that are for 2008
 lastyear = df[df['year'] == 2008]
-
+#create plot
 sns.set(style="white")
 ax = sns.countplot(x="regimetxt", hue="attacktype1_txt", data=df)
 ax.set_xticklabels(ax.get_xticklabels(), rotation=40, ha="right")

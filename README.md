@@ -14,15 +14,16 @@ These datasets include:
 1. The University of Maryland - College Park's Global Terrorism Database dataset (joining to parts, the almost complete set and the indpenendent values for 1993).
 2. Cheibub, Gandhi, and Vreeland's Democracy and Dictatorship dataset.
 3. The Gapminder dataset for country population by year.
+4. There is a file labelled *2008_g8_oecd.csv* that is a list of the countries that were members of the G8 and/or OECD in 2008. This will be used in later analysis for 2008 and will be joined onto the merged CheibubStart dataset. This file was made by us. It is based on membership dates of these organizations.
 
-The merged version of these four datasets selects for the years extending from 1970 - 2008. This selection is made due to it being the years for which each dataset has values. An issue emerged for North and South Vietnam, in that the Gapminder datasets do not seem to include them individually.
+There is a merged file of the Cheibub, et al dataset and the GTD dataset with all values for 1970 through 2008. Gapminder's data is left separate to avoid complications later, but a cleaned up version of this file is used in later analysis. An issue emerged for North and South Vietnam, in that the Gapminder datasets do not seem to include them individually.
 
 ## Getting the data
 
 1. To begin, the file *data1.py* downloads the massive GTD dataset and merges it with the missing values for 1993. This merged set is then cleaned and converted to a csv named *STARTfinal.csv*
 2. This is followed up by *data2.py* which downloads Cheibub, et al's data set from Cheibub's website. This dataset it then cleaned and then the necessary values are converted to a csv named *Cheibub.csv*
 3. *data3.py* merges the two csvs produced in the earlier two sets of codes and writes the output to a csv named *cheibubStart*
-4. *data4.py* imports the gapminder datasets, and cleans them. These will be used in a later analysis. The output of this code is converted to the csv file named *gap.csv*
+4. *data4.py* imports the gapminder dataset, and cleans it. It will be used in a later analysis. The output of this code is converted to the csv file named *gap.csv*
 
 ## Exploring the data
 
@@ -91,19 +92,19 @@ Note: Run the file *maps.py* after all the previous code has been run or the fil
 
 The maps produced are:
 
-1. *map1.png*: This is a map of every attack that occurred from 1970 to 2008 and is color coded by attack type. It is over a map of the world. This map uses world borders as they were in 2008.
+1. *map1.png*: This is a map of every attack that occurred in 2008 and is color coded by attack type. It is over a map of the world. This map uses world borders as they were in 2008.
 
 [![map1](https://github.com/erikemueller/final-project-Mueller-Chandra/blob/master/map1.png)](#features)
 
-2. *map2.png*: This is a map of every attack that occurred from 1970 to 2008 and is color coded by regime type. It is over a map of the world. This map uses world borders as they were in 2008.
+2. *map2.png*:This is a map of every attack that occurred in 2008 and is color coded by regime type of the nation in which it occurred. It is over a map of the world. This map uses world borders as they were in 2008. 
 
 [![map2](https://github.com/erikemueller/final-project-Mueller-Chandra/blob/master/map2.png)](#features)
 
-3. *map3.png*: This is a map of every attack that occurred in 2008 and is color coded by attack type. It is over a map of the world. This map uses world borders as they were in 2008.
+3. *map3.png*: This is a map of every attack that occurred from 1970 to 2008 and is color coded by attack type. It is over a map of the world. This map uses world borders as they were in 2008.
 
 [![map3](https://github.com/erikemueller/final-project-Mueller-Chandra/blob/master/map3.png)](#features)
 
-4. *map4.png*: This is a map of every attack that occurred in 2008 and is color coded by regime type of the nation in which it occurred. It is over a map of the world. This map uses world borders as they were in 2008. 
+4. *map4.png*: This is a map of every attack that occurred from 1970 to 2008 and is color coded by regime type. It is over a map of the world. This map uses world borders as they were in 2008.
 
 [![map4](https://github.com/erikemueller/final-project-Mueller-Chandra/blob/master/map4.png)](#features)
 

@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import statsmodels.api as sm
 import pandas as pd
 import numpy as np
@@ -10,9 +11,9 @@ import seaborn as sns
 import csv
 from shapely.geometry import Point
 import collections
-
+#import data
 df = pd.read_csv('CheibubStart.csv').dropna()
-
+#plot
 sns.set(style="white")
 ax = sns.countplot(x="Country", data=df, order=df.Country.value_counts().iloc[:10].index)
 ax.set_xticklabels(ax.get_xticklabels(), rotation=40, ha="right")

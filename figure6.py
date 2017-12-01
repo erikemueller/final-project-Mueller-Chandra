@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import statsmodels.api as sm
 import pandas as pd
 import numpy as np
@@ -10,10 +11,11 @@ import seaborn as sns
 import csv
 from shapely.geometry import Point
 import collections
-
+#import the data
 df = pd.read_csv('CheibubStart.csv').dropna()
+#select only data from 2008
 lastyear = df[df['year'] == 2008]
-
+#plot
 sns.set(style="white")
 ax = sns.countplot(x="Country", data=lastyear, order=lastyear.Country.value_counts().iloc[:10].index)
 ax.set_xticklabels(ax.get_xticklabels(), rotation=40, ha="right")
