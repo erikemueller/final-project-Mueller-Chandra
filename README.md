@@ -139,5 +139,5 @@ The regression line appears to be slightly flatter when all the regimes are cons
 
 
 
-## Something extra
-I had another assignment that I used the STARTfinal.csv file that was generated for this project. The project created an interactive map that is hosted [here](https://erikemueller.shinyapps.io/hw10/).
+## Something extra (& fun!)
+Erik had another assignment that he used the STARTfinal.csv file that was generated for this project. The project created an interactive map that is hosted [here](https://erikemueller.shinyapps.io/hw10/) using R code. It is somewhat glitchy.
