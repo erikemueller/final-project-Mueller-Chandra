@@ -113,7 +113,8 @@ We generated factorplots of democracy and regime in relation to the count of ter
 
 We did this using *figure10.py* and *figure11.py* producing *figure10.png* and *figure11.png* which provide us with an indicator of the range of attacks, as well as the presence of outliers in relation to all regimes, and in relation to democracies. 
 
-[![figure10](https://github.com/erikemueller/final-project-Mueller-Chandra/blob/master/figure10.png](#features)
+[![figure10](https://github.com/erikemueller/final-project-Mueller-Chandra/blob/master/figure10.png)](#features)
+
 
 [![figure11](https://github.com/erikemueller/final-project-Mueller-Chandra/blob/master/figure11.png)](#features)
 
