@@ -136,3 +136,8 @@ We then plotted the number of attacks in a particular year in a particular count
 [![figure15](https://github.com/erikemueller/final-project-Mueller-Chandra/blob/master/figure15.png)](#features)
 
 The regression line appears to be slightly flatter when all the regimes are considered, as opposed to only democracies. In the figure with the age of democracies, it is interesting to note that there appears to be increased terrorism in countries that have existed as democracies for 60-80 years - which is perhaps indicative of increased terrorism amongst countries that were colonized but became independent around the 1930s and 40s.
+
+
+
+## Something extra
+I had another assignment that I used the STARTfinal.csv file that was generated for this project. The project created an interactive map that is hosted [here](https://erikemueller.shinyapps.io/hw10/).
