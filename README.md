@@ -123,7 +123,7 @@ The outliers indicated in Figure10 under Cilvian Dictatorship are two years in I
 
 *figure12.py* and *figure13.py* plot the distribution of attacks with specific reference to G8 and OECD countries, comparing the number of attacks in each of them, with the total number of attacks in the rest of the world.
 
-[![figure12](https://github.com/erikemueller/final-project-Mueller-Chandra/blob/master/figure12.png](#features)
+[![figure12](https://github.com/erikemueller/final-project-Mueller-Chandra/blob/master/figure12.png)](#features)
 
 [![figure13](https://github.com/erikemueller/final-project-Mueller-Chandra/blob/master/figure13.png)](#features)
 
