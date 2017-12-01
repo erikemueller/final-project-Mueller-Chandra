@@ -1,4 +1,4 @@
-import statsmodels.api as sm 
+import statsmodels.api as sm
 import pandas as pd
 import numpy as np
 from sklearn import preprocessing
@@ -34,4 +34,4 @@ ax.set_xticklabels(ax.get_xticklabels(), rotation=40, ha="right")
 ax.set(xlabel='Country', ylabel='Attacks per 1 million people', title = "10 countries and territories with highest rate of attacks per 1 million people for 2008")
 ax.set_position([0.2,0.2,1.5,0.8])
 leg = ax.legend(loc = 'center left', bbox_to_anchor = (1.0, 0.5))
-plt.savefig('top10ratepermillion2008.pdf', bbox_inches='tight')
+plt.savefig('figure7.png', bbox_inches='tight')

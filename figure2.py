@@ -21,4 +21,4 @@ ax.set(xlabel='Country', ylabel='Total number of attacks', title = "Total attack
 plt.tight_layout()
 ax.set_position([0.2,0.2,1.5,0.8])
 leg = ax.legend(loc = 'center left', bbox_to_anchor = (1.0, 0.5))
-plt.savefig('regimeattacktype.pdf', bbox_inches='tight')
+plt.savefig('figure2.png', bbox_inches='tight')

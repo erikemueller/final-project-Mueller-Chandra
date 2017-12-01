@@ -10,7 +10,7 @@ CheibubStart = pd.merge(START, Cheibub, how='outer')
 
 
 CheibubStart["regime"].fillna(CheibubStart["regime"].fillna(0), inplace=True)
-CheibubStart = CheibubStart[CheibubStart['year'] <= 2008].dropna()
+CheibubStart = CheibubStart[CheibubStart['year'] <= 2008]
 #add text for regime type
 CheibubStart.loc[(CheibubStart['regime'] == 0.0), 'regimetxt'] = 'Unknown/Other type or Occupied Territory'
 CheibubStart.loc[(CheibubStart['regime'] == 1.0), 'regimetxt'] = 'Mixed democracy'
@@ -20,5 +20,7 @@ CheibubStart.loc[(CheibubStart['regime'] == 4.0), 'regimetxt'] = 'Military dicta
 CheibubStart.loc[(CheibubStart['regime'] == 5.0), 'regimetxt'] = 'Royal dictatorship'
 CheibubStart.loc[(CheibubStart['regime'] == 6.0), 'regimetxt'] = 'Parliamentary democracy'
 
+count_country = CheibubStart['eventid'].groupby([CheibubStart['Country'], CheibubStart['year']]).count().reset_index(name="count")
+CheibubStart = pd.merge(CheibubStart, count_country)
 #save dataframe to csv
 CheibubStart.to_csv('CheibubStart.csv', index=False)

@@ -25,5 +25,5 @@ Cheibub5.loc[(Cheibub5['regime'] == 0), 'regime' ] = 6
 Cheibub6=Cheibub5.rename(columns={'ctryname': 'Country'})
 
 #save a dataframe to a csv with only the columns we care about
-Cheibubfinal = pd.DataFrame(Cheibub6, columns = ['Country', 'year', 'regime'])
+Cheibubfinal = pd.DataFrame(Cheibub6, columns = ['Country', 'year', 'regime', 'democracy', 'agereg', 'agedem'])
 Cheibubfinal.to_csv('Cheibub.csv', index=False)

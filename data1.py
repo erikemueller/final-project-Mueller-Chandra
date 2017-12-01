@@ -34,5 +34,5 @@ START4.loc[(START4['country_txt'] == "Belize") & (START4['iyear'] == 1980), 'cou
 START5 = START4.rename(columns={'country_txt': 'Country', 'iyear': 'year'})
 
 #save a dataframe to a csv with only the columns we care about
-STARTfinal = pd.DataFrame(START5, columns = ['Country', 'region_txt', 'year', 'attacktype1_txt', 'nkill', 'gname', 'longitude', 'latitude'])
+STARTfinal = pd.DataFrame(START5, columns = ['Country', 'region_txt', 'year', 'attacktype1', 'INT_LOG', 'INT_IDEO', 'attacktype1_txt', 'nkill', 'gname', 'longitude', 'latitude', 'eventid'])
 STARTfinal.to_csv('STARTfinal.csv', index=False)
