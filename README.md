@@ -137,7 +137,16 @@ We then plotted the number of attacks in a particular year in a particular count
 
 The regression line appears to be slightly flatter when all the regimes are considered, as opposed to only democracies. In the figure with the age of democracies, it is interesting to note that there appears to be increased terrorism in countries that have existed as democracies for 60-80 years - which is perhaps indicative of increased terrorism amongst countries that were colonized but became independent around the 1930s and 40s.
 
+## Citations
+1. National Consortium for the Study of Terrorism and Responses to Terrorism (START).
+(2016). Global Terrorism Database [Data file]. Retrieved from https://www.start.umd.edu/gtd
+2. Cheibub, José Antonio, Jennifer Gandhi, and James Raymond Vreeland. 2010. “Democracy
+and Dictatorship Revisited.” Public Choice, vol. 143, no. 2-1, pp. 67-101.
+https://sites.google.com/site/joseantoniocheibub/datasets/democracy-and-dictatorship-revisited
+3. Gapminder. (2017). Total Population [data file]. Retrieved from http://www.gapminder.org/data/.
+4. "List of OECD Member countries - Ratification of the Convention on the OECD." List of OECD Member countries - Ratification of the Convention on the OECD - OECD. Accessed December 01, 2017. http://www.oecd.org/about/membersandpartners/list-oecd-member-countries.htm.
+5. "The Group of Eight (G8) Industrialized Nations." Council on Foreign Relations. Accessed December 01, 2017. https://www.cfr.org/backgrounder/group-eight-g8-industrialized-nations.
 
 
 ## Something extra (& fun!)
-Erik had another assignment that he used the STARTfinal.csv file that was generated for this project. The project created an interactive map that is hosted [here](https://erikemueller.shinyapps.io/hw10/) using R code. It is somewhat glitchy.
+Erik had another assignment that he used the STARTfinal.csv file that was generated for this project. The project created an interactive map that is hosted [here](https://erikemueller.shinyapps.io/hw10/) using R code. It is somewhat glitchy, but seems to function best in Google Chrome.
