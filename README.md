@@ -1,4 +1,4 @@
-# Final Project for Meghana Chandra and Erik Mueller for Programming for Public Policy
+# Final Project for Meghana Chandra and Erik Mueller for Programming for Public Policy at the University of Chicago
  ## The Question 
 This project is an attempt to understand the interaction betweeen governmental regimes and terrorist attacks. It was motivated by a need to explore the relationship between the system of government and terrorist attacks - in relation to targets as well as perpetrators. We wanted to examine if increased representation, and the age of the prevalent governmental regime influenced the number of terrorist attacks. We begin by exploring the data with and without normalizations using population. Furthermore, we use maps to understand the distribution of terrorist attacks. We finally investigate to what extent regimes and the age of the prevalent regime influences the occurence of terrorist attacks. 
  
